@@ -1,0 +1,23 @@
+guessesTaken = 0
+
+#---------------------
+print("Hello World!")
+name = input("What is your name? ")
+print("Hello " + name + ", nice to meet you.")
+age = int(input("How old are you? "))
+if age == 15:
+    print("Awesome, same as my creator!")
+elif age < 15:
+    print("Aww, aren't you cute!")
+else:
+    print("Wow, you're so old!")
+while guessesTaken <= 5:#<= means less then or equal to!!!
+    print("I have a riddle for you...")
+    ans1 = input("Thirty white horses all on a red hill, first they stomp,\nthen they chomp, then they stand still.\nWhat are they?")
+    if ans1 == "teeth":
+        print("Correct! Well done, " + name + "!")
+        break
+    else:
+        print("Not quite, try again.")
+        guessesTaken += 1
+print("TBC")
